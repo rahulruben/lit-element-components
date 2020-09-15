@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="webcomponents/webcomponents-loader.js"></script>
+    <title>Genesis LitElement Components</title>
+    <style>
+        button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <gn-sidebar id="sidebar">
+        <p>Inside Content</p>
+    </gn-sidebar>
+    <button onclick="toggleSidebar()">Toggle Sidebar</button>
+    <script>
+        var sidebar = document.getElementById('sidebar');
+        function toggleSidebar() {
+            sidebar.open = true;
+        }
+    </script>
+</body>
+
+</html>
